@@ -1,0 +1,128 @@
+.page-header {
+  border-bottom: 2px solid #ececec;
+  position: relative;
+}
+
+.container__location {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.page-header__navigation {
+  display: flex;
+  align-items: center;
+}
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media screen and(min-width: 768px) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .site-nav__link,
+.menu .auth-nav__link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .site-nav__link:hover,
+.menu .site-nav__link:focus,
+.menu .auth-nav__link:hover,
+.menu .auth-nav__link:focus {
+  text-decoration: underline;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $color;
+  padding: 48px 40px;
+
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+
+  letter-spacing: 0.02em;
+  z-index: 100;
+
+  color: $title-text-color;
+  @media (min-width: 767px) {
+    display: none;
+  }
+  // outline: 1px solid tomato;
+
+  transform: translateX(100%);
+  transition: transform 250ms linear;
+
+  // @media screen and(max-width: 767px) {
+  //   display: none;
+  // }
+}
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.menu-toggle {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: $title-text-color;
+}
+
+.mobile-menu {
+  display: block;
+
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .site-nav__link {
+  display: block;
+  color: $title-text-color;
+  text-decoration: none;
+}
+// .mobile-menu {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.5);
+//   z-index: 999;
+
+//   opacity: 0;
+//   visibility: hidden;
+//   pointer-events: none;
+
+//   transition: opacity 250ms linear, visibility 250ms linear;
+// }
