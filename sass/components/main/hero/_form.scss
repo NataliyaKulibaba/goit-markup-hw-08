@@ -129,6 +129,14 @@
     border-color: $accent-color;
   }
 }
+.checkbox__label {
+  @media screen and(max-width:767px) {
+    display: flex;
+    font-size: 12px;
+    line-height: 1.17;
+  }
+}
+
 .checkbox__agreement {
   color: $accent-color;
   text-decoration: underline;

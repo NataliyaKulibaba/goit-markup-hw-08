@@ -19,23 +19,21 @@
       <a href="" class="logo"> Web<span class="logo__accent">Studio</span></a>
 
       <nav class="page-header__navigation">
-        <button type="button" class="menu-togglejc-open-menu" aria-expanded="false" aria-controls="mobile-menu" >
+        <button  class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
             <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
               <use class="icon-menu" href="./images/svg/sprite.svg#icon-menu" ></use>
             </svg>
-        </button>
-
-        
-          <!-- 
-          
-          <!-- <nav> -->
-          <div class="menu">
+        </button>     
+         
+        <div class="menu">
             <ul class="site-nav">
               <li class="site-nav__item"> <a href="./index.html" class="site-nav__link current">Студия</a></li>
               <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
               <li class="site-nav__item"> <a href="" class="site-nav__link">Контакты</a></li>
             </ul>
-            <!-- </nav> -->
+           
 
             <ul class="auth-nav">
               <li class="auth-nav__item">
@@ -58,12 +56,13 @@
                 </a>
               </li>
             </ul>
-          </div>
+        </div>
               
       </nav>
     </div>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle jc-close-menu">
+      <button class="menu-toggle js-close-menu">
         <svg width="40px" height="40px" aria-label="Кнопка закрытия мобильного меню">
           <use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
         </svg>
@@ -436,7 +435,7 @@
 
     <!-- Постоянные клиенты -->
     <section class="section">
-      <div class="container">
+      <div class="container ">
         <h2 class="section__title">Постоянные клиенты</h2>
         <ul class="clients">
           <li class="clients__item">
@@ -490,7 +489,7 @@
 
     <div class="container container-contacts">
       <div class="contacts-item">
-        <a href="" class="logo"> Web <span class="logo__accent logo__accent--inverse">Studio</span></a>
+        <a href="" class="logo footer"> Web <span class="logo__accent logo__accent--inverse">Studio</span></a>
         <address class="contacts">
           <p class="contacts__address">г. Киев, пр-т Леси Украинки, 26 </p>
           <a href="mailto:info@devstudio.com" class=" contacts__link">info@devstudio.com</a>

@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  min-height: 60px;
 }
 .page-header__navigation {
   display: flex;
@@ -75,24 +76,20 @@
 
   letter-spacing: 0.02em;
   z-index: 100;
+  overflow-y: scroll;
 
   color: $title-text-color;
   @media (min-width: 767px) {
     display: none;
   }
-  // outline: 1px solid tomato;
 
-  transform: translateX(100%);
+  transform: scale(0);
   transition: transform 250ms linear;
-
-  // @media screen and(max-width: 767px) {
-  //   display: none;
-  // }
 }
 .menu-container.is-open {
-  transform: translateX(0);
+  transform: scale(100%);
 }
-.menu-toggle {
+.menu-container .menu-toggle {
   position: absolute;
   top: 10px;
   right: 15px;

@@ -1,6 +1,4 @@
 .logo {
-  margin-right: 93px;
-
   color: $accent-color;
 
   font-family: Raleway;
@@ -8,12 +6,25 @@
   font-size: 26px;
   line-height: 1.19;
   display: flex;
+  justify-content: center;
+  @media screen and(min-width:768px) {
+    margin-right: 93px;
+  }
+  @media screen and(max-width:767px) {
+    margin-bottom: 20px;
+  }
 }
+// .logo.footer {
+//   @media screen and(max-widht:767px) {
+//     justify-content: center;
+//   }
+
 .logo__accent {
   color: $title-text-color;
   display: flex;
 
   &--inverse {
     color: $color;
+    // justify-content: center;
   }
 }

@@ -15,8 +15,8 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
-   openModalBtn.addEventListener('click', toggleModal);
-   closeModalBtn.addEventListener('click', toggleModal);
+  openMenuBtn.addEventListener('click', toggleMenu);
+  closeMenuBtn.addEventListener('click', toggleMenu);
 
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
