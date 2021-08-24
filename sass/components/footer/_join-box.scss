@@ -1,8 +1,13 @@
 .join-box {
-  margin-left: 70px;
-  width: 206px;
   @media screen and (max-width: 767px) {
     margin: 0 auto;
+  }
+  @media screen and (min-width: 768px) {
+    margin-left: 165px;
+  }
+  @media screen and (min-width: 1199px) {
+    margin-left: 70px;
+    width: 206px;
   }
 }
 .join-box__text {
@@ -14,11 +19,16 @@
 }
 
 .join-box__list {
+  display: flex;
+  justify-content: center;
+
   @media screen and(max-width:767px) {
     margin-bottom: 60px;
   }
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and(min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 
 .join-box__link {

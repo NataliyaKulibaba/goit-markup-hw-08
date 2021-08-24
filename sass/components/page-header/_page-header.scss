@@ -7,7 +7,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   min-height: 60px;
+
+  @media screen and(min-width: 768px) {
+    min-height: 80px;
+  }
 }
 .page-header__navigation {
   display: flex;
@@ -52,13 +57,6 @@
 .menu .auth-nav__link {
   color: inherit;
   text-decoration: none;
-}
-
-.menu .site-nav__link:hover,
-.menu .site-nav__link:focus,
-.menu .auth-nav__link:hover,
-.menu .auth-nav__link:focus {
-  text-decoration: underline;
 }
 
 .menu-container {
@@ -108,18 +106,3 @@
   color: $title-text-color;
   text-decoration: none;
 }
-// .mobile-menu {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   z-index: 999;
-
-//   opacity: 0;
-//   visibility: hidden;
-//   pointer-events: none;
-
-//   transition: opacity 250ms linear, visibility 250ms linear;
-// }

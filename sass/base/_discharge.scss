@@ -20,7 +20,7 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
   display: block;
   height: auto;
 }
@@ -29,23 +29,9 @@ ul {
   padding: 0;
   margin: 0;
 }
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
-  }
-}
 .section {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     padding-bottom: 60px;
     padding-top: 60px;
   }
@@ -60,17 +46,18 @@ ul {
 }
 .section__title {
   margin-top: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
-
+  font-size: 28px;
+  line-height: 1.18;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+
   text-align: center;
-  @media screen and (max-width: 767px) {
-    margin-bottom: 30px;
-    font-size: 28px;
-    line-height: 1.18;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }

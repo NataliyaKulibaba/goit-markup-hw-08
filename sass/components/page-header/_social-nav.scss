@@ -11,22 +11,19 @@
   color: $accent-color;
   &::after {
     position: absolute;
-    left: -15px;
+    left: -20px;
     bottom: 10px;
     content: '';
-    display: inline-block;
+    display: block;
     width: 22px;
     height: 0;
+
     border: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
   }
-
-  // &:not(:last-child) {
-  //   margin-right: 10px;
-  // }
 }
 .social-nav__item:not(:last-child) {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 .social-nav__item:nth-child(1) .social-nav__link::after {
   display: none;
