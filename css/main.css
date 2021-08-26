@@ -7,6 +7,10 @@ body {
   line-height: 1.71;
 }
 
+body.modal-open {
+  overflow: hidden;
+}
+
 a {
   text-decoration: none;
 }
@@ -127,6 +131,48 @@ ul {
           align-items: center;
 }
 
+.logo {
+  color: #2196f3;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 88px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
+
+.logo__accent {
+  color: #212121;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo__accent--inverse {
+  color: #fff;
+}
+
 .menu-toggle {
   min-height: 40px;
   min-width: 40px;
@@ -230,48 +276,6 @@ ul {
   display: block;
   color: #212121;
   text-decoration: none;
-}
-
-.logo {
-  color: #2196f3;
-  font-family: Raleway;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .logo {
-    margin-right: 93px;
-    font-size: 26px;
-    line-height: 1.19;
-  }
-}
-
-.logo__accent {
-  color: #212121;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.logo__accent--inverse {
-  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
@@ -651,6 +655,7 @@ ul {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   z-index: 2;
+  overflow-y: scroll;
 }
 
 .backdrop.is-hidden {
@@ -1051,6 +1056,7 @@ ul {
   position: relative;
   margin-right: 30px;
   overflow: hidden;
+  width: 370px;
 }
 
 .works__item:nth-child(3) {
@@ -1730,14 +1736,12 @@ ul {
 @media screen and (max-width: 767px) {
   .card-set__item {
     margin-bottom: 30px;
-    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .card-set__item {
     width: calc((100% - 60px) / 2);
-    max-width: 354px;
     margin: 15px;
   }
 }
@@ -1745,7 +1749,6 @@ ul {
 @media screen and (min-width: 1200px) {
   .card-set__item {
     width: calc((100% - 90px) / 3);
-    max-width: 370px;
   }
 }
 
@@ -1782,6 +1785,12 @@ ul {
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card__box--tablet {
+    padding-bottom: 56px;
+  }
 }
 
 .card__thumb {

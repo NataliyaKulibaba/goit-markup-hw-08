@@ -37,8 +37,7 @@
 
             <ul class="auth-nav">
               <li class="auth-nav__item">
-        
-                <a href="mailto:info@devstudio.com" class="auth-nav__link">
+                 <a href="mailto:info@devstudio.com" class="auth-nav__link">
                   <svg class="auth-nav__icon auth-nav__icon--upper" width="16px" height="12px">
                     <use href="./images/svg/sprite.svg#icon-envelope"></use>
                   </svg>
@@ -47,7 +46,6 @@
               </li>
         
               <li class="auth-nav__item">
-        
                 <a href="Tel:+380961111111" class="auth-nav__link">
                   <svg class="auth-nav__icon auth-nav__icon--lover " width="10px" height="16px">
                     <use href="./images/svg/sprite.svg#icon-smartphone"></use>
@@ -55,6 +53,7 @@
                   +38 096 111 11 11
                 </a>
               </li>
+
             </ul>
         </div>
               
@@ -62,42 +61,41 @@
     </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
+
       <button class="menu-toggle js-close-menu">
         <svg width="40px" height="40px" aria-label="Кнопка закрытия мобильного меню">
           <use class="icon-cross" href="./images/svg/sprite.svg#icon-cross"></use>
         </svg>
       </button> 
+
       <div class="mobile-menu">
+
         <ul class="site-nav">
           <li class="site-nav__item"> <a href="./index.html" class="site-nav__link current">Студия</a></li>
           <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
           <li class="site-nav__item"> <a href="" class="site-nav__link">Контакты</a></li>
         </ul>
               
+        <ul class="auth-nav">
+          <li class="auth-nav__item">
+            <a href="mailto:info@devstudio.com" class="auth-nav__link-mail">   
+              info@devstudio.com
+            </a>
+          </li>
         
-          <ul class="auth-nav">
-            <li class="auth-nav__item">
-        
-              <a href="mailto:info@devstudio.com" class="auth-nav__link-mail">
-                
-                info@devstudio.com
-              </a>
-            </li>
-        
-            <li class="auth-nav__item">
-        
-              <a href="Tel:+380961111111" class="auth-nav__link-tel">
-                
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-          <ul class="social-nav">
-            <li class="social-nav__item"> <a href="#" class="social-nav__link">Instagram</a></li>
-            <li class="social-nav__item"> <a href="#" class="social-nav__link">Twitter</a></li>
-            <li class="social-nav__item"> <a href="#" class="social-nav__link">Facebook</a></li>
-            <li class="social-nav__item"> <a href="#" class="social-nav__link">LinkedIn</a></li>
-          </ul>
+          <li class="auth-nav__item">
+            <a href="Tel:+380961111111" class="auth-nav__link-tel">
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <ul class="social-nav">
+          <li class="social-nav__item"> <a href="#" class="social-nav__link">Instagram</a></li>
+          <li class="social-nav__item"> <a href="#" class="social-nav__link">Twitter</a></li>
+          <li class="social-nav__item"> <a href="#" class="social-nav__link">Facebook</a></li>
+          <li class="social-nav__item"> <a href="#" class="social-nav__link">LinkedIn</a></li>
+        </ul>
         
       </div>
 
@@ -109,81 +107,64 @@
     <!--Герой-->
     <section class="hero">
       <div class="container">
-        <!-- <div class="hero__container"> -->
-          <h1 class="hero__title">Эффективные решения  <br> для вашего бизнеса</h1>
+        <h1 class="hero__title">Эффективные решения  <br> для вашего бизнеса</h1>
 
+        <button class="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
 
+            <form class="form">
 
-          <button class="button" data-modal-open>Заказать услугу</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
-
-              <form class="form">
-
-                <label class="form__field">
-
-                  <input type="text" class="form__input" name="name" placeholder=" ">
+              <label class="form__field">
+               <input type="text" class="form__input" name="name" placeholder=" ">
                   <span class="form__label">Имя</span>
-
                   <svg class="form__icon">
                     <use href="./images/svg/sprite.svg#icon-mob-name"></use>
                   </svg>
+              </label>
 
-                </label>
-
-                <label class="form__field">
-
-                  <input type="tel" class="form__input" name="tel" placeholder=" ">
-                  <span class="form__label">Телефон</span>
-
-                  <svg class="form__icon">
-                    <use href="./images/svg/sprite.svg#icon-mob-phone"></use>
-                  </svg>
-
-                </label>
-
-
-                <label class="form__field">
-
-                  <input type="Email" class="form__input" name="Email" placeholder=" ">
-                  <span class="form__label">Почта</span>
-
-                  <svg class="form__icon">
-                    <use href="./images/svg/sprite.svg#icon-mob-email"></use>
-                  </svg>
-
-                </label>
-
-                <label class="form__field ">
-                  <span class="form__item--static">Комментарий</span>
-                  <textarea class="form__textarea" name="Comment" rows="8" placeholder="Введите текст"></textarea>
-
-                </label>
-
-                <label class="form__field checkbox">
-                  <input type="checkbox" class="checkbox__input" name="policy">
-                  <span class="checkbox__icon"></span>
-                  <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a class="checkbox__agreement" href="#">Условия
-                      договора</a></span>
-                </label>
-
-                <button class="form__submit" type="submit">Отправить</button>
-
-              </form>
-
-
-              <button class="modal__btn" data-modal-close>
-                <svg class="modal__icon">
-                  <use href="./images/svg/close.svg#icon-close"> </use>
+              <label class="form__field">
+                <input type="tel" class="form__input" name="tel" placeholder=" ">
+                <span class="form__label">Телефон</span>
+                <svg class="form__icon">
+                   <use href="./images/svg/sprite.svg#icon-mob-phone"></use>
                 </svg>
-              </button>
-            </div>
+              </label>
+
+              <label class="form__field">
+                <input type="Email" class="form__input" name="Email" placeholder=" ">
+                <span class="form__label">Почта</span>
+                <svg class="form__icon">
+                   <use href="./images/svg/sprite.svg#icon-mob-email"></use>
+                </svg>
+              </label>
+
+               <label class="form__field ">
+                <span class="form__item--static">Комментарий</span>
+                <textarea class="form__textarea" name="Comment" rows="8" placeholder="Введите текст"></textarea>
+              </label>
+
+              <label class="form__field checkbox">
+                <input type="checkbox" class="checkbox__input" name="policy">
+                <span class="checkbox__icon"></span>
+                <span class="checkbox__label">Соглашаюсь с рассылкой и принимаю <a class="checkbox__agreement" href="#">Условия
+                      договора</a></span>
+              </label>
+
+              <button class="form__submit" type="submit">Отправить</button>
+
+            </form>
+
+
+            <button class="modal__btn" data-modal-close>
+              <svg class="modal__icon">
+                <use href="./images/svg/close.svg#icon-close"> </use>
+              </svg>
+            </button>
           </div>
+        </div>
 
-
-
-        <!-- </div> -->
       </div>
     </section>
 
@@ -237,6 +218,7 @@
     </section>
 
     <!--Чем мы занимаемся-->
+
     <section class="section section-works">
       <div class="container">
         <h2 class="section__title">Чем мы занимаемся</h2>
@@ -244,18 +226,16 @@
           <li class="works__item">
           
             <picture>
-              <source srcset="./images/works/desktop-works1.webp 370w,
-                          ./images/works/desktop-works1@2x.webp 740w
-                          " 
-                          type="image/webp">
-              <img srcset="./images/works/desktop-works1.jpg 370w,
-                          ./images/works/desktop-works1@2x.jpg  740w
-                          "  
-                          src="./images/works/desktop-works1.jpg" alt="Верстка сайтов"
-                sizes="(min-width: 1200px) 30vw" />
+              <source srcset="./images/works/desktop-works1.webp 1x, ./images/works/desktop-works1@2x.webp 2x" 
+                      type="image/webp"
+              />
+              <img srcset="./images/works/desktop-works1.jpg 1x, ./images/works/desktop-works1@2x.jpg  2x"  
+                          src="./images/works/desktop-works1.jpg" 
+                          alt="Верстка сайтов"
+                          width="370px"
+              />
             </picture>
 
-            <!-- <img src="./images/box1.jpg" alt="Верстка сайтов" width="370" height="294"> -->
             <div class="works__overlay">
               <p class="works__description">Десктопные приложения</p>
             </div>
@@ -264,13 +244,14 @@
           <li class="works__item">
 
             <picture>
-              <source srcset="./images/works/desktop-works2.webp 370w,
-                               ./images/works/desktop-works2@2x.webp 740w
-                               " type="image/webp">
-              <img srcset="./images/works/desktop-works2.jpg 370w,
-                              ./images/works/desktop-works2@2x.jpg  740w
-                             " src="./images/works/desktop-works2.jpg" alt="Разработка мобольных приложений"
-                sizes="(min-width: 1200px) 30vw" />
+              <source srcset="./images/works/desktop-works2.webp 1x, ./images/works/desktop-works2@2x.webp 2x" 
+                      type="image/webp"
+              />
+              <img srcset="./images/works/desktop-works2.jpg 1x, ./images/works/desktop-works2@2x.jpg 2x" 
+                   src="./images/works/desktop-works2.jpg" 
+                   alt="Разработка мобольных приложений"
+                   width="370px"
+               />
             </picture>
 
             <!-- <img src="./images/box2.jpg" alt="Разработка мобольных приложений" width="370" height="294"> -->
@@ -282,16 +263,15 @@
           <li class="works__item">
 
             <picture>
-              <source srcset="./images/works/desktop-works3.webp 370w,
-                              ./images/works/desktop-works3@2x.webp 740w
-                              " type="image/webp">
-              <img srcset="./images/works/desktop-works3.jpg 370w,
-                            ./images/works/desktop-works3@2x.jpg  740w
-                            " src="./images/works/desktop-works3.jpg" alt="Разработка мобольных приложений"
-                sizes="(min-width: 1200px) 30vw" />
+              <source srcset="./images/works/desktop-works3.webp 1x, ./images/works/desktop-works3@2x.webp 2x" 
+                        type="image/webp"
+              />
+              <img srcset="./images/works/desktop-works3.jpg 1x, ./images/works/desktop-works3@2x.jpg  2x" 
+                    src="./images/works/desktop-works3.jpg" alt="Разработка мобольных приложений"
+                    width="370px" 
+              />
             </picture>
 
-            <!-- <img src="./images/box3.jpg" alt="Разработка дизайна" width="370" height="294"> -->
             <div class="works__overlay">
               <p class="works__description">Дизайнерские решения</p>
             </div>
@@ -308,26 +288,38 @@
         <ul class="command">
           <li class=" command__item">
             <picture>
-              <source
-              srcset="./images/command/mobile-IDemyanenko.webp 450w,
-              ./images/command/mobile-IDemyanenko@2x.webp 900w,
-              ./images/command/tablet-IDemyanenko.webp 354w,
-              ./images/command/tablet-IDemyanenko@2x.webp 708w,
-              ./images/command/desktop-IDemyanenko.webp 270w,
-              ./images/command/desktop-IDemyanenko@2x.webp 540w
-              "
-              type="image/webp">
-              <img 
-              srcset="./images/command/mobile-IDemyanenko.jpg 450w,
-              ./images/command/mobile-IDemyanenko@2x.jpg 900w,
-              ./images/command/tablet-IDemyanenko.jpg 354w,
-              ./images/command/tablet-IDemyanenko@2x.jpg 708w,
-              ./images/command/desktop-IDemyanenko.jpg 270w,
-              ./images/command/desktop-IDemyanenko@2x.jpg 540w
-              "
-              src="./images/command/mobile-IDemyanenko.jpg" alt="фото Игоря Демьяненко"
-              sizes="(min-width: 960px) 25vw, (min-width: 576px) 50vw,  100vw"
+
+              <source  srcset="./images/command/mobile-IDemyanenko.webp, ./images/command/mobile-IDemyanenko@2x.webp 2x"
+                type="image/webp"
+                media="(max-width:767px)"
               />
+
+              <source srcset="./images/command/tablet-IDemyanenko.webp 1x, ./images/command/tablet-IDemyanenko@2x.webp 2x"
+                type="image/webp" 
+                media="(min-width:768px) and (max-width:1199px)" 
+              />
+
+              <source srcset="../images/command/desktop-IDemyanenko.webp 1x, ./images/command/desktop-IDemyanenko@2x.webp 2x"
+                type="image/webp" 
+                media="(min-width:1200px)"
+              />
+
+              <source srcset="./images/command/mobile-IDemyanenko.jpg 1x, ./images/command/mobile-IDemyanenko@2x.jpg 2x"
+                media="(max-width:767px)" 
+              />
+
+              <source  srcset="./images/command/tablet-IDemyanenko.jpg 1x, ./images/command/tablet-IDemyanenko@2x.jpg 2x"
+                media="(min-width:768px) and (max-width:1199px)"
+              />
+
+              <source  srcset="./images/command/desktop-IDemyanenko.jpg 1x, ./images/command/desktop-IDemyanenko@2x.jpg 2x"
+                media="(min-width:1200px)" 
+              />
+              
+              <img  src="./images/command/desktop-IDemyanenko.jpg" 
+                alt="фото Игоря Демьяненко"
+              />
+
             </picture>
             <div class="command__box">
               <h3 class="command__title">Игорь Демьяненко</h3>
@@ -368,24 +360,39 @@
 
           <li class="command__item">
             <picture>
-              <source srcset="./images/command/mobile-ORepina.webp 450w,
-                          ./images/command/mobile-ORepina@2x.webp 900w,
-                          ./images/command/tablet-ORepina.webp 354w,
-                          ./images/command/tablet-ORepina@2x.webp 708w,
-                          ./images/command/desktop-ORepina.webp 270w,
-                          ./images/command/desktop-ORepina@2x.webp 540w
-                          "
-                 type="image/webp">
-              <img srcset="./images/command/mobile-ORepina.jpg 450w,
-                          ./images/command/mobile-ORepina@2x.jpg 900w,
-                          ./images/command/tablet-ORepina.jpg 354w,
-                          ./images/command/tablet-ORepina@2x.jpg 708w,
-                          ./images/command/desktop-ORepina.jpg 270w,
-                          ./images/command/desktop-ORepina@2x.jpg 540w
-                          " src="./images/command/mobile-ORepina.jpg" alt="фото Ольги Репиной"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" />
+
+              <source srcset="./images/command/mobile-ORepina.webp, ./images/command/mobile-ORepina@2x.webp 2x" 
+                      type="image/webp" 
+                      media="(max-width:767px)" 
+              /> 
+
+              <source  srcset="./images/command/tablet-ORepina.webp 1x, ./images/command/tablet-ORepina@2x.webp 2x" 
+                      type="image/webp"
+                      media="(min-width:768px) and (max-width:1199px)" 
+              />
+
+              <source srcset="./images/command/desktop-ORepina.webp 1x, ./images/command/desktop-ORepina@2x.webp 2x" 
+                      type="image/webp" 
+                      media="(min-width:1200px)" 
+              />
+
+              <source srcset="./images/command/mobile-ORepina.jpg 1x,./images/command/mobile-ORepina@2x.jpg 2x" 
+                      media="(max-width:767px)" 
+               /> 
+
+              <source srcset="./images/command/tablet-ORepina.jpg 1x,./images/command/tablet-ORepina@2x.jpg 2x" 
+                      media="(min-width:768px) and (max-width:1199px)" 
+              /> 
+
+              <source  srcset="./images/command/desktop-ORepina.jpg 1x, ./images/command/desktop-ORepina@2x.jpg 2x" 
+                      media="(min-width:1200px)"
+              />
+
+              <img src="./images/command/desktop-ORepina.jpg" alt="фото Ольги Репиной" 
+              />
+
             </picture>
-            
+                    
             <div class="command__box">
               <h3 class="command__title">Ольга Репина</h3>
               <p lang="en" class="command__description">Frontend Developer</p>
@@ -424,24 +431,38 @@
 
           <li class="command__item">
             <picture>
-              <source srcset="./images/command/mobile-MErmakov.webp 450w,
-                                      ./images/command/mobile-MErmakov@2x.webp 900w,
-                                      ./images/command/tablet-MErmakov.webp 354w,
-                                      ./images/command/tablet-MErmakov@2x.webp 708w,
-                                      ./images/command/desktop-MErmakov.webp 270w,
-                                      ./images/command/desktop-MErmakov@2x.webp 540w
-                                      " 
-                    type="image/webp">
-              <img srcset="./images/command/mobile-MErmakov.jpg 450w,
-                                      ./images/command/mobile-MErmakov@2x.jpg 900w,
-                                      ./images/command/tablet-MErmakov.jpg 354w,
-                                      ./images/command/tablet-MErmakov@2x.jpg 708w,
-                                      ./images/command/desktop-MErmakov.jpg 270w,
-                                      ./images/command/desktop-MErmakov@2x.jpg 540w
-                                      "
-                src="./images/command/mobile-MErmakov.jpg" alt="фото Михаила Ермакова"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" />
+
+              <source srcset="./images/command/mobile-MErmakov.webp, ./images/command/mobile-MErmakov@2x.webp 2x" 
+                      type="image/webp" 
+                      media="(max-width:767px)" 
+              />
+
+              <source  srcset="./images/command/tablet-MErmakov.webp 1x,./images/command/tablet-MErmakov@2x.webp 2x" 
+                      type="image/webp"
+                      media="(min-width:768px) and (max-width:1199px)" 
+              /> 
+                      
+              <source srcset="./images/command/desktop-MErmakov.webp 1x, ./images/command/desktop-MErmakov@2x.webp 2x" 
+                      type="image/webp" 
+                      media="(min-width:1200px)" 
+              />
+
+              <source srcset="./images/command/mobile-MErmakov.jpg 1x, ./images/command/mobile-MErmakov@2x.jpg 2x" 
+                   media="(max-width:767px)" 
+              />
+
+              <source srcset="./images/command/tablet-MErmakov.jpg 1x, ./images/command/tablet-MErmakov@2x.jpg 2x" 
+                   media="(min-width:768px) and (max-width:1199px)" 
+              />
+              <source srcset="./images/command/desktop-MErmakov.jpg 1x, ./images/command/desktop-MErmakov@2x.jpg 2x" 
+                   media="(min-width:1200px)"
+              />
+
+              <img src="./images/command/desktop-MErmakov.jpg" alt="фото Михаила Ермакова" 
+              />
+
             </picture>
+           
             
             <div class="command__box">
               <h3 class="command__title">Михаил Ермаков</h3>
@@ -482,23 +503,37 @@
 
           <li class="command__item">
             <picture>
-              <source srcset="./images/command/mobile-NTarasov.webp 450w,
-                              ./images/command/mobile-NTarasov@2x.webp 900w,
-                              ./images/command/tablet-NTarasov.webp 354w,
-                              ./images/command/tablet-NTarasov@2x.webp 708w,
-                              ./images/command/desktop-NTarasov.webp 270w,
-                              ./images/command/desktop-NTarasov@2x.webp 540w" 
-                      type="image/webp">
-              <img srcset="./images/command/mobile-NTarasov.jpg 450w,
-                          ./images/command/mobile-NTarasov@2x.jpg 900w,
-                          ./images/command/tablet-NTarasov.jpg 354w,
-                          ./images/command/tablet-NTarasov@2x.jpg 708w,
-                          ./images/command/desktop-NTarasov.jpg 270w,
-                          ./images/command/desktop-NTarasov@2x.jpg 540w"
-                src="./images/command/mobile-NTarasov.jpg" alt="Николая Тарасова"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw,  100vw" />
+
+              <source srcset="./images/command/mobile-NTarasov.webp, ./images/command/mobile-NTarasov@2x.webp 2x" type="image/webp"
+                    media="(max-width:767px)"
+              />
+              <source srcset="./images/command/tablet-NTarasov.webp 1x, ./images/command/tablet-NTarasov@2x.webp 2x" 
+                       type="image/webp"
+                       media="(min-width:768px) and (max-width:1199px)"
+              />
+
+              <source srcset="./images/command/desktop-NTarasov.webp 1x, ./images/command/desktop-NTarasov@2x.webp 2x" 
+                    type="image/webp"
+                    media="(min-width:1200px)" 
+              />
+
+              <source srcset="./images/command/mobile-NTarasov.jpg 1x, ./images/command/mobile-NTarasov@2x.jpg 2x" 
+                   media="(max-width:767px)" 
+              />
+
+              <source srcset="./images/command/tablet-NTarasov.jpg 1x, ./images/command/tablet-NTarasov@2x.jpg 2x"
+                   media="(min-width:768px) and (max-width:1199px)" 
+              /> 
+
+              <source srcset="./images/command/desktop-NTarasov.jpg 1x, ./images/command/desktop-NTarasov@2x.jpg 2x" 
+                   media="(min-width:1200px)"
+              />
+
+              <img  src="./images/command/desktop-NTarasov.jpg" alt="фото Николая Тарасова" 
+              />
+
             </picture>
-            
+           
             <div class="command__box">
               <h3 class="command__title">Николай Тарасов</h3>
               <p lang="en" class="command__description">UI Designe</p>
@@ -594,6 +629,7 @@
 
     <div class="container container-contacts">
       <div class="contacts__tablet">
+
         <div class="contacts-item">
           <a href="" class="logo footer"> Web <span class="logo__accent logo__accent--inverse">Studio</span></a>
           <address class="contacts">
@@ -607,7 +643,6 @@
           <p class="join-box__text"> Присоединяйтесь </p>
 
           <ul class="join-box__list">
-
             <li class="join-box__item">
               <a href="" class="join-box__link">
                 <svg class="join-box__icon">
@@ -643,34 +678,37 @@
           </ul>
         </div>
       </div>
+
       <div class="subscribe-box">
         <p class="subscribe-box__text">Подпишитесь на рассылку</p>
+
         <form class="subscribe-box__form">
+
           <label class="subscribe-box__label">
             <input type="Email" class="subscribe-box__input" name="Email" placeholder="E-mail ">
           </label>
+
           <button type="submit" class="subscribe-box__btn">
             Подписаться
             <svg class="subscribe-box__icon">
               <use href='./images/svg/sprite.svg#icon-icon-send'></use>
             </svg>
           </button>
+
         </form>
       </div>
-
-
-
-
-
-
+      
     </div>
 
   </footer>
+
   <script src="./js/modal.js"></script>
+
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
     integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
     crossorigin="anonymous"></script>
   <script defer src="js/mobile-menu.js"></script>
+  
 </body>
 
 </html>
