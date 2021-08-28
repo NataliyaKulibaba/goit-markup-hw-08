@@ -1,13 +1,13 @@
 .auth-nav {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    margin-left: auto;
-  }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-top: auto;
     margin-bottom: auto;
     justify-content: space-between;
     margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: 289px;
   }
 }
 .auth-nav__item {
