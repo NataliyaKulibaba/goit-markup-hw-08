@@ -23,10 +23,10 @@
 @media screen and (max-width: 480px) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/Hero_img/Hero-mobile-img.jpg);
+      url(../../../../images/Hero_img/Hero-mobile-img.jpg);
     @media (min-resolution: 2dppx), (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(/images/Hero_img/Hero-mobile-img@2x.jpg);
+        url(../../../../images/Hero_img/Hero-mobile-img@2x.jpg);
     }
   }
 }
