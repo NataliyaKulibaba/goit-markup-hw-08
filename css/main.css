@@ -1175,6 +1175,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .command__item .social__item:not(:last-child) {
@@ -1503,10 +1506,8 @@ ul {
   height: 20px;
 }
 
-@media screen and (min-width: 1200px) {
-  .join-box__item:not(:last-child) {
-    margin-right: 10px;
-  }
+.join-box__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 1199px) {
