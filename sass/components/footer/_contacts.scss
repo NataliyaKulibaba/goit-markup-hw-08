@@ -40,9 +40,12 @@
     display: flex;
     justify-content: center;
     align-items: baseline;
+  }
+  @media screen and(min-width:768px) and(max-width:1199px) {
     margin-bottom: 60px;
   }
 }
+
 .contacts__address {
   color: $color;
   @media screen and(max-width:767px) {

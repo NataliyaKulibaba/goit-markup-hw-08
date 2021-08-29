@@ -20,14 +20,12 @@
 
 .join-box__list {
   display: flex;
-  justify-content: center;
 
   @media screen and(max-width:767px) {
     margin-bottom: 60px;
   }
-
-  @media screen and(min-width: 1200px) {
-    justify-content: space-between;
+  @media screen and(max-width:1199px) {
+    justify-content: center;
   }
 }
 
@@ -55,4 +53,10 @@
   fill: $color;
   width: 20px;
   height: 20px;
+}
+
+.join-box__item:not(:last-child) {
+  @media screen and(min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
